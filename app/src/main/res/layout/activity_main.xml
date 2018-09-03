@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg4"
+    android:background="@drawable/bg9"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -35,7 +35,24 @@
             android:textColor="@color/LighOrange"
             android:textSize="30sp"
             tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Let's Get You Started!"
+                android:textAlignment="center"
+                android:textColor="@color/LighOrange"
+                android:textSize="15sp"
+                tools:ignore="HardCodedText" />
+        </LinearLayout>
     </LinearLayout>
+
 
     <Button
         android:id="@+id/startBlog"
