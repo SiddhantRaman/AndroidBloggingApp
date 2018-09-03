@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg10"
+    android:background="@drawable/bg4"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -15,24 +15,24 @@
         android:orientation="vertical">
 
         <TextView
-            android:textColor="@color/LighOrange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="100dp"
             android:text="1000+"
+            android:textColor="@color/LighOrange"
             android:textSize="60sp"
             android:textStyle="bold"
             tools:ignore="HardcodedText" />
 
         <TextView
-            android:textColor="@color/LighOrange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:text="Bloggers registered..."
             android:textAlignment="center"
+            android:textColor="@color/LighOrange"
             android:textSize="30sp"
             tools:ignore="HardcodedText" />
     </LinearLayout>
