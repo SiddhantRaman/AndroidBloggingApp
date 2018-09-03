@@ -1,57 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg9"
+    android:background="@drawable/bg10"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/LighOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:text="1000+"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:textColor="@color/LighOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="Bloggers registered..."
+            android:textAlignment="center"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/startBlog"
-        android:layout_width="347dp"
-        android:layout_height="79dp"
-        android:background="@android:color/holo_green_light"
-        android:fontFamily="@font/abeezee"
-        android:text="Start New Blog"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textColorHighlight="@android:color/holo_orange_light"
-        android:textSize="36sp"
-        android:textStyle="bold"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@+id/browseBlogs"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:background="@drawable/round_button"
+        android:drawableStart="@drawable/startnewblog"
+        android:paddingStart="4dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983"
+        tools:ignore="RtlSymmetry" />
 
     <Button
         android:id="@+id/myBlogs"
-        android:layout_width="357dp"
-        android:layout_height="82dp"
-        android:background="@android:color/holo_blue_dark"
-        android:text="MY BLOGS"
-        android:textColor="@android:color/holo_red_light"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/browseBlogs"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        android:drawableStart="@drawable/myblogs"
+        android:paddingStart="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.741" />
+        app:layout_constraintVertical_bias="0.983"
+        tools:ignore="RtlSymmetry" />
 
     <Button
         android:id="@+id/browseBlogs"
-        android:layout_width="357dp"
+        android:layout_width="79dp"
         android:layout_height="78dp"
-        android:background="@android:color/holo_orange_light"
-        android:text="Browse Blogs"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/round_button"
+        android:drawableStart="@drawable/browseblogs"
+        android:paddingStart="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintHorizontal_bias="0.914"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963" />
-</android.support.constraint.ConstraintLayout>
+        app:layout_constraintVertical_bias="0.983"
+        tools:ignore="RtlSymmetry" />
+</RelativeLayout>
