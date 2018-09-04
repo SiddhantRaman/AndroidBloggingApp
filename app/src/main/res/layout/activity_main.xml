@@ -1,112 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg9"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context="com.example.ramansid.myapp1.MainActivity">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg7">
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="100dp"
-            android:text="1000+"
-            android:textColor="@color/LighOrange"
-            android:textSize="60sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="Bloggers registered..."
-            android:textAlignment="center"
-            android:textColor="@color/LighOrange"
-            android:textSize="30sp"
-            tools:ignore="HardcodedText" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="Let's Get You Started!"
-                android:textAlignment="center"
-                android:textColor="@color/LighOrange"
-                android:textSize="15sp"
-                tools:ignore="HardCodedText" />
-        </LinearLayout>
-    </LinearLayout>
-
-
-    <Button
-        android:id="@+id/startBlog"
-        android:layout_width="79dp"
-        android:layout_height="75dp"
-        android:layout_alignBottom="@+id/browseBlogs"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="18dp"
-        android:background="@drawable/round_button"
-        android:drawableStart="@drawable/startnewblog"
-        android:paddingStart="4dp"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.983"
-        tools:ignore="RtlSymmetry" />
-
-    <Button
-        android:id="@+id/myBlogs"
-        android:layout_width="79dp"
-        android:layout_height="75dp"
-        android:layout_alignTop="@+id/browseBlogs"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/round_button"
-        android:drawableStart="@drawable/myblogs"
-        android:paddingStart="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.983"
-        tools:ignore="RtlSymmetry" />
-
-    <Button
-        android:id="@+id/browseBlogs"
-        android:layout_width="79dp"
-        android:layout_height="78dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="18dp"
-        android:layout_marginEnd="17dp"
-        android:background="@drawable/round_button"
-        android:drawableStart="@drawable/browseblogs"
-        android:paddingStart="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.983"
-        tools:ignore="RtlSymmetry" />
-</RelativeLayout>
+        android:layout_gravity="start"
+        android:background="@color/colorPrimaryDark"
+        app:itemIconTint="@color/LighOrange"
+        app:itemTextColor="@color/LighOrange"
+        design:menu="@menu/navigation" />
+</LinearLayout>
