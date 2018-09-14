@@ -29,8 +29,13 @@ public class MainActivity extends AppCompatActivity {
                 Fragment frag = null;
                 switch(item.getItemId()) {
                     case R.id.startNewBlog:
-                        Intent intent = new Intent(MainActivity.this, BlogActivity.class);
-                        startActivity(intent);
+                        Intent intentBlog = new Intent(MainActivity.this, BlogActivity.class);
+                        startActivity(intentBlog);
+                        break;
+                    case R.id.browseBlogs:
+                        Intent intentBrowse = new Intent(MainActivity.this, BrowseActivity.class);
+                        startActivity(intentBrowse);
+                        break;
                 }
                 return true;
     }

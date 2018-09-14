@@ -3,23 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:design="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_browse"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ramansid.myapp1.MainActivity">
+    tools:context="com.example.ramansid.myapp1.BrowseActivity">
 
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/bg7">
+        android:background="@drawable/bg9">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BlogStop"
+            android:text="BrowseFree"
             android:textAlignment="viewStart"
             android:padding="10dp"
             android:textColor="@color/LighOrange"
@@ -28,12 +28,12 @@
     </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigationView"
+        android:id="@+id/navigationViewBrowse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:background="@color/my_primary_dark"
         app:itemIconTint="#FFFF"
         app:itemTextColor="#FFFF"
-        design:menu="@menu/navigation" />
+        design:menu="@menu/navigation_browse" />
 </LinearLayout>

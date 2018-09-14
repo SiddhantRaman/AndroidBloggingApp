@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/myBlogs1"
+        android:icon="@drawable/myblogs"
+        android:title="My Blogs"/>
+
+    <item
+        android:id="@+id/homeAction1"
+        android:icon="@drawable/homeaction"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/startNewBlog1"
+        android:icon="@drawable/startnewblog"
+        android:title="New Blog"/>
+
+</menu>

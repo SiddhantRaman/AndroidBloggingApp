@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg9"
+    android:background="@drawable/bg10"
     tools:context=".BlogActivity">
 
     <EditText
         android:id="@+id/postTitle1"
         android:layout_width="360dp"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/round_textedit"
         android:ems="10"
         android:hint="Title"
         android:inputType="textPersonName"
+        android:padding="10dp"
         android:textAlignment="viewStart"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,29 +29,18 @@
 
     <EditText
         android:id="@+id/postDesc1"
-        android:layout_width="356dp"
-        android:layout_height="148dp"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:background="@drawable/round_textedit"
         android:ems="10"
         android:hint="Write here..."
         android:inputType="textMultiLine"
+        android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.734"
-        tools:ignore="HardcodedText" />
-
-    <Button
-        android:id="@+id/postButton1"
-        android:layout_width="348dp"
-        android:layout_height="wrap_content"
-        android:text="Post"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.965"
+        app:layout_constraintVertical_bias="0.825"
         tools:ignore="HardcodedText" />
 
     <ImageButton
@@ -61,4 +53,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.006"
         app:srcCompat="@drawable/loadimage" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationBlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@color/my_primary_dark"
+        app:itemIconTint="#FFFF"
+        app:itemTextColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989"
+        design:menu="@menu/navigation_blog" />
+
 </android.support.constraint.ConstraintLayout>
